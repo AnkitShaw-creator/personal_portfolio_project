@@ -10,7 +10,8 @@
 <body>
     <h1>Howdy Pal!</h1>
     {% load static %}
-    <a href="{% static 'portfolio/resume.docx' %}"> Resume</a> 
+    <a href="{% static 'portfolio/resume.docx' %}">Resume</a> 
+    <a href="{% url 'blog:all_blogs' %}"> See my blogs</a>
     <!-- change it to pdf for the file to viewd inside the browser itself-->
     <br>
     <img src="{% static 'portfolio/img.png' %}" alt="My image">
